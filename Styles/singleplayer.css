@@ -172,13 +172,13 @@ main {
 	flex-direction: column;
 	margin-left: 25vw;
 	margin-right: 25vw;
-	height: 440px;
+	height: 62vh;
 	overflow-x: hidden;
-  	overflow-y: scroll;
+  overflow-y: scroll;
 }
 
 .skill div div {
-	width: 710px;
+	width: auto;
 	height: 100px;
 	border: solid white 2px;
 	margin: 10px;
