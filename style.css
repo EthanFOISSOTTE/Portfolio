@@ -9,4 +9,11 @@ body {
 	width: 100vw;
 	height: 100vh;
 	background-size: cover;
+	position: relative;
+}
+
+.Name {
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
 }
