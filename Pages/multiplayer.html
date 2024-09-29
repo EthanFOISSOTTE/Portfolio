@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="../Styles/multiplayer.css">
+	<title>MineFolio-Multiplayer</title>
+</head>
+
+<body>
+
+	<header>
+		<br><h2>Multiplayer</h2>
+	</header>
+
+	<main>
+		<div class="skill">
+			<div class="inner">
+				<div class="skill-item" data-page="information_div1.html">
+					<img src="../Images/Logos/Vegafruit.png">
+					<h3>Ouvrier Végafruit</h3>
+					<p>Août 2023, Saint-Nicolas de Port</p>
+				</div>
+				<div class="skill-item" data-page="information_div2.html">
+					<img src="../Images/Logos/Gendarmerie.png">
+					<h3>Stage BTS Gendarmerie</h3>
+					<p>Mai 2023 à Juillet 2023, Nancy</p>
+				</div>
+				<div class="skill-item" data-page="information_div3.html">
+					<img src="../Images/Logos/Gendarmerie.png">
+					<h3>Stage des Cadets Gendarmes</h3>
+					<p>Septembre 2020 à Juin 2021, Nancy</p>
+				</div>
+				<div class="skill-item" data-page="information_div4.html">
+					<img src="../Images/Logos/Polyprod.png">
+					<h3>Mission d'intérim Polyprod</h3>
+					<p>Juin 2020 à Juillet 2020, Dombasle-sur-Meurthe</p>
+				</div>
+				<div></div>
+			</div>
+		</div>
+	</main>
+
+
+	<footer>
+		<button class="minecraft-btn1" id="info-btn">Informations</button>
+		<button class="minecraft-btn2" disabled>BoutonTest2</button>
+		<button class="minecraft-btn6" disabled>BoutonTest6</button>
+
+		<a href="https://craftle.enigmatics.org"><button class="minecraft-btn3">Craftle</button></a>
+		<button class="minecraft-btn4" disabled>BoutonTest4</button>
+		<button class="minecraft-btn5" disabled>BoutonTest5</button>
+		<a href="../Index.html"><button class="Menu">Menu</button></a>
+	</footer>
+
+	<script>
+        const skillItems = document.querySelectorAll('.skill-item');
+        let selectedDiv = null;
+
+        skillItems.forEach(item => {
+            item.addEventListener('click', function() {
+                console.log('Div cliquée:', this);
+
+                if (selectedDiv) {
+                    selectedDiv.classList.remove('selected');
+                }
+
+                selectedDiv = this;
+                this.classList.add('selected');
+            });
+        });
+
+        const infoBtn = document.getElementById('info-btn');
+        infoBtn.addEventListener('click', function() {
+            if (selectedDiv) {
+                const pageToRedirect = selectedDiv.getAttribute('data-page');
+                console.log('Redirection vers:', pageToRedirect);
+                window.location.href = pageToRedirect;
+            } else {
+                alert('Veuillez sélectionner un élément avant de cliquer sur le bouton Info.');
+            }
+        });
+</script>
+
+
+	</script>
+
+</body>
+</html>

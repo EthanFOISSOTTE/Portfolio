@@ -54,7 +54,7 @@ main {
   	width: 25%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia'; 
+  	font: 1.2vw 'Minecraftia'; 
 }
 
 .minecraft-btn1:hover {
@@ -75,7 +75,7 @@ main {
   	width: 25%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia'; 
+  	font: 1.2vw 'Minecraftia'; 
 }
 
 .minecraft-btn2:hover {
@@ -96,7 +96,7 @@ main {
   	width: 12%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia'; 
+  	font: 1.2vw 'Minecraftia'; 
 }
 
 .minecraft-btn3:hover {
@@ -117,7 +117,7 @@ main {
   	width: 12%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia'; 
+  	font: 1.2vw 'Minecraftia'; 
 }
 
 .minecraft-btn4:hover {
@@ -138,7 +138,7 @@ main {
   	width: 12%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia'; 
+  	font: 1.2vw 'Minecraftia'; 
 }
 
 .minecraft-btn5:hover {
@@ -159,7 +159,7 @@ main {
   	width: 12%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia'; 
+  	font: 1.2vw 'Minecraftia'; 
 }
 
 .Menu:hover {
@@ -189,4 +189,19 @@ main {
 .skill div div img {
 	width: 100px;
 	height: 95px;
+}
+
+.skill p {
+	margin: 0;
+	padding: 5px;
+	word-wrap: break-word;
+	white-space: normal;
+}
+
+button:disabled {
+    background-color: grey;
+    color: white;
+    border: 1px solid #ccc;
+    cursor: not-allowed; /* Montre que le bouton est inactif */
+    opacity: 0.6; /* Rend le bouton visuellement "désactivé" */
 }

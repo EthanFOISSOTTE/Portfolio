@@ -9,20 +9,21 @@
 }
 
 body {
-	background-image: url(../Images/Background.jpg);
-	background-repeat: no-repeat;
-	width: 100vw;
-	height: 100vh;
-	background-size: cover;
-	position: relative;
+	background-image: url(../Images/SinglePlayer.png);
 }
 
-.Name {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	width: 50%;
-	height: 30%;
+h2 {
+	color: white;
+	font: 20pt 'Minecraftia';
+	text-align: center;
+}
+
+main {
+	background-color: black;
+	margin-top: 15px;
+	width: 100vw;
+	height: 62vh;
+	opacity: 0.5;
 }
 
 .minecraft-btn1 {
@@ -32,10 +33,10 @@ body {
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	position: absolute;
-  	left: 50%;
-  	top: 40%;
+  	left: 38%;
+  	top: 82%;
   	transform: translate(-50%);
-  	width: 30%;
+  	width: 25%;
   	height: 5%;
   	color: white;
   	font: 1.2vw 'Minecraftia'; 
@@ -53,10 +54,10 @@ body {
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	position: absolute;
-  	left: 50%;
-  	top: 48%;
-  	transform: translate(-50%);
-  	width: 30%;
+  	left: 52%;
+  	top: 82%;
+  	transform: tranlate(-50%);
+  	width: 25%;
   	height: 5%;
   	color: white;
   	font: 1.2vw 'Minecraftia'; 
@@ -74,10 +75,10 @@ body {
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	position: absolute;
-  	left: 50%;
-  	top: 56%;
-  	transform: translate(-50%);
-  	width: 30%;
+  	left: 25.5%;
+  	top: 90%;
+  	transform: tranlate(-50%);
+  	width: 12%;
   	height: 5%;
   	color: white;
   	font: 1.2vw 'Minecraftia'; 
@@ -88,114 +89,134 @@ body {
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.Options {
+.minecraft-btn4 {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	position: absolute;
-  	left: 41.5%;
-  	top: 68%;
-  	transform: translate(-50%);
-  	width: 13%;
+  	left: 38.5%;
+  	top: 90%;
+  	transform: tranlate(-50%);
+  	width: 12%;
   	height: 5%;
   	color: white;
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.Options:hover {
+.minecraft-btn4:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.Quitter {
+.minecraft-btn5 {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	position: absolute;
-  	left: 58.5%;
-  	top: 68%;
-  	transform: translate(-50%);
-  	width: 13%;
+  	left: 52%;
+  	top: 90%;
+  	transform: tranlate(-50%);
+  	width: 12%;
   	height: 5%;
   	color: white;
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.Quitter:hover {
+.minecraft-btn5:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.Langues {
+.Menu {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
   	text-shadow: 3px 3px #4C4C4C;
   	outline: 2px solid #000;
   	position: absolute;
-  	left: 32%;
-  	top: 68%;
-  	transform: translate(-50%);
-  	width: 2.5%;
+  	left: 65%;
+  	top: 90%;
+  	transform: tranlate(-50%);
+  	width: 12%;
   	height: 5%;
   	color: white;
-  	font: 10pt 'Minecraftia';
+  	font: 1.2vw 'Minecraftia'; 
 }
 
-.Langues:hover {
+.Menu:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.Langues img {
-	width: 70%;
-	height: 70%;
-	padding-top: 2px;
+.skill {
+	display: flex;
+	flex-direction: column;
+	margin-left: 25vw;
+	margin-right: 25vw;
+	height: 62vh;
+	overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-h5 {
-	font: 40pt 'Minecraftia';
-	color: yellow;
-	text-shadow: 2px 2px #4C4C4C;
-	position: absolute;
-	left: 55%;
-	right: -7%;
-	animation: zoom 2s infinite;
+.skill-item {
+	width: auto;
+	height: 100px;
+	border: solid white 2px;
+	margin: 10px;
+	display: flex;
+	color: white;
+	cursor: pointer;
 }
 
-@keyframes zoom{
-	0% {
-		transform: scale(0.5) rotate(-25deg);
-	}
-	50% {
-		transform: scale(0.6) rotate(-25deg);
-	}
-	100% {
-		transform: scale(0.5) rotate(-25deg);
-	}
+.skill-item img {
+	width: 100px;
+	height: 95px;
+	padding: 2px;
 }
 
-footer {
-	font: 1.2vw 'Minecraftia';
+.skill-item p {
+	margin: 0;
+	padding: 5px;
+	margin-top: 2px;
+}
+
+.skill-item h3 {
+	margin: 0;
+	padding: 5px;
+}
+
+.skill-item.selected {
+	border-color: red;
+}
+
+.skill div div {
+	width: auto;
+	height: 100px;
+	border: solid white 2px;
+	margin: 10px;
+	display: flex;
 	color: white;
 }
 
-.Version {
-	position: fixed;
-   bottom: 0;
-   left: 0;
-   margin: 10px;
+.skill div div img {
+	width: 100px;
+	height: 95px;
+	padding: 2px;
 }
 
-.Copyright {
-	position: fixed;
-   bottom: 0;
-   right: 0;
-   margin: 10px;
+.skill p {
+	margin: 0;
+	padding: 5px;
+	margin-top: 2px;
+}
+
+.skill h3 {
+	margin: 0;
+	padding: 5px;
 }
 
 button:disabled {
