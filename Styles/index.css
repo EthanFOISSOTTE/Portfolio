@@ -15,117 +15,65 @@ body {
 	height: 100vh;
 	background-size: cover;
 	position: relative;
+	overflow: hidden;
 }
 
 .Name {
-	position: absolute;
-	left: 50%;
-	transform: translate(-50%);
-	width: 50%;
-	height: 30%;
+	width: 80%; /* L'image occupe 80% de la largeur de l'écran */
+  height: auto; /* Hauteur auto pour garder le ratio de l'image */
+  margin-top: 20px; /* Espacement par rapport au haut de l'écran */
+  position: relative; /* Changement de positionnement pour éviter le chevauchement */
+  left: 0;
+  transform: none; /* On retire la transformation pour un centrage naturel */
+  display: block;
+  margin-left: auto;
+  margin-right: auto; /* Centre l'image horizontalement */
 }
 
-.minecraft-btn1 {
+.minecraft-btn1, .minecraft-btn2, .minecraft-btn3 {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50%;
-  	top: 40%;
-  	transform: translate(-50%);
-  	width: 30%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
+  border-color: #AAA #565656 #565656 #AAA;
+  text-shadow: 3px 3px #4C4C4C;
+  outline: 2px solid #000;
+  color: white;
+  width: 30%; /* L'image occupe 80% de la largeur de l'écran */
+  height: 5%; /* Hauteur auto pour garder le ratio de l'image */
+  position: relative; /* Changement de positionnement pour éviter le chevauchement */
+  left: 0;
+  transform: none; /* On retire la transformation pour un centrage naturel */
+  display: block;
+  margin-top: 1%;
+  margin-left: auto;
+  margin-right: auto; /* Centre l'image horizontalement */
+  font: 1.2vw 'Minecraftia'; 
 }
 
-.minecraft-btn1:hover {
+.minecraft-btn1:hover, .minecraft-btn2:hover, .minecraft-btn3:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.minecraft-btn2 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50%;
-  	top: 48%;
-  	transform: translate(-50%);
-  	width: 30%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
+.Options, .Quitter {
+    background-image: url(../Images/BtnGrey.png);
+    font-family: 'MinecraftiaRegular';
+    border-color: #AAA #565656 #565656 #AAA;
+    text-shadow: 3px 3px #4C4C4C;
+    outline: 2px solid #000;
+    color: white;
+    font: 1.2vw 'Minecraftia'; 
+    width: 14.4%; /* Largeur des boutons */
+    height: 5%; /* Hauteur fixe */
+    display: inline-block; /* Affichage côte à côte */
+    position: relative; /* Positionnement normal */
+    margin-top: 1%; /* Espacement vertical sous le bouton 3 */
+    margin-left: 10px; /* Espace entre les boutons */
 }
-
-.minecraft-btn2:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn3 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50%;
-  	top: 56%;
-  	transform: translate(-50%);
-  	width: 30%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn3:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
 .Options {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 41.5%;
-  	top: 68%;
-  	transform: translate(-50%);
-  	width: 13%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
+	margin-left: 35%;
 }
 
-.Options:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.Quitter {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 58.5%;
-  	top: 68%;
-  	transform: translate(-50%);
-  	width: 13%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.Quitter:hover {
+.Options:hover, .Quitter:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
@@ -159,12 +107,13 @@ body {
 
 h5 {
 	font: 40pt 'Minecraftia';
-	color: yellow;
-	text-shadow: 2px 2px #4C4C4C;
-	position: absolute;
-	left: 55%;
-	right: -7%;
-	animation: zoom 2s infinite;
+    color: yellow;
+    text-shadow: 2px 2px #4C4C4C;
+    position: absolute; /* Positionnement absolu par rapport à l'élément parent */
+    bottom: 500px; /* Espacement du bas de l'image */
+    right: 10px; /* Espacement du bord droit de l'image */
+    animation: zoom 2s infinite;
+    pointer-events: none; /* Empêche l'interaction avec le texte */
 }
 
 @keyframes zoom{
@@ -198,10 +147,74 @@ footer {
    margin: 10px;
 }
 
-button:disabled {
-    background-color: grey;
-    color: white;
-    border: 1px solid #ccc;
-    cursor: not-allowed; /* Montre que le bouton est inactif */
-    opacity: 0.6; /* Rend le bouton visuellement "désactivé" */
+@media only screen and (max-width: 600px) {
+    /* Ajustement de l'image */
+    .Name {
+        width: 80%; /* L'image occupe 80% de la largeur de l'écran */
+        height: auto; /* Hauteur auto pour garder le ratio de l'image */
+        margin-top: 20px; /* Espacement par rapport au haut de l'écran */
+        position: relative; /* Changement de positionnement pour éviter le chevauchement */
+        left: 0;
+        transform: none; /* On retire la transformation pour un centrage naturel */
+        display: block;
+        margin-left: auto;
+        margin-right: auto; /* Centre l'image horizontalement */
+    }
+
+    /* Réorganisation des boutons en colonne avec même largeur que l'image */
+    .minecraft-btn1, .minecraft-btn2, .minecraft-btn3, .Quitter, .Options {
+        width: 80%; /* Même largeur que l'image */
+        height: auto; /* Hauteur adaptée au contenu */
+        font-size: 5vw; /* Taille de texte plus grande sur mobile */
+        margin: 10px auto; /* Centrage et espace entre les boutons */
+        display: block; /* Les boutons sont en colonne */
+        position: relative; /* Réinitialise le positionnement */
+        left: 0;
+        transform: none;
+        top: 35px; /* Remonte légèrement les boutons */
+    }
+
+    .Langues {
+        font-size: 5vw; /* Taille de texte plus grande sur mobile */
+        margin: 10px auto; /* Centrage et espace entre les boutons */
+        display: block; /* Les boutons sont en colonne */
+        position: relative; /* Réinitialise le positionnement */
+        left: 0;
+        transform: none;
+        top: 35px; /* Remonte légèrement les boutons */
+    }
+
+    .Langues {
+    	height: 6%;
+    	width: 9%;
+    }
+
+    /* Ajustement de l'icône dans le bouton "Langues" */
+    .Langues img {
+        width: 90%; /* Ajuste la taille de l'icône sur mobile */
+        height: 90%;
+    }
+
+    /* Ajustement du texte Ethan */
+    h5 {
+        font-size: 8vw;
+        margin-top: 20px;
+        text-align: center;
+        position: relative;
+        left: 0;
+        transform: none;
+    }
+
+    /* Ajustement du footer */
+    footer {
+        font-size: 2.5vw; /* Réduction de la taille du texte du footer sur mobile */
+        text-align: center;
+        margin-top: 20px;
+        position: relative; /* Pour éviter le chevauchement */
+    }
+
+    .Version, .Copyright {
+        display: block; /* Affichage en bloc pour éviter le chevauchement */
+        margin: 5px; /* Ajout d'espace vertical entre les textes */
+    }
 }
