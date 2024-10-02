@@ -18,48 +18,6 @@ h2 {
 	text-align: center;
 }
 
-.minecraft-btn1 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 36.5%;
-  	top: 10%;
-  	transform: translate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn1:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn2 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50.5%;
-  	top: 10%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn2:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
 .Menu {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
@@ -73,7 +31,7 @@ h2 {
   left: 0;
   transform: none; /* On retire la transformation pour un centrage naturel */
   display: block;
-  margin-top: 85vh;
+  margin-top: 10vh;
   margin-left: auto;
   margin-right: auto; /* Centre l'image horizontalement */
   font: 1.5vw 'Minecraftia'; 
@@ -90,4 +48,33 @@ button:disabled {
     border: 1px solid #ccc;
     cursor: not-allowed; /* Montre que le bouton est inactif */
     opacity: 0.6; /* Rend le bouton visuellement "désactivé" */
+}
+
+.blocs {
+	margin-top: 15vh;
+	display: flex;
+	justify-content: space-between;
+}
+
+.blocs div {
+	background-color: black;
+	opacity: 0.5;
+	height: 50vh;
+	width: 40vw;
+	margin: 2%;
+}
+
+.blocs div form {
+	text-align: center;
+	font: 1.5vw 'Minecraftia'; 
+	color: white;
+	padding: 6%;
+}
+
+.blocs div form input{
+	margin: 2%;
+}
+
+.submit {
+	font: 20%;
 }

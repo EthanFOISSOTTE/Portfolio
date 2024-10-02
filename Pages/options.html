@@ -8,12 +8,33 @@
 </head>
 <body>
 	<header>
-		<h2>Personnel</h2>
+		<br><h2>Personnel</h2>
 	</header>
 
 	<main>
-		<button class="minecraft-btn1" disabled>BoutonTest1</button>
-		<button class="minecraft-btn2" disabled>BoutonTest2</button>
+
+		<div class="blocs">
+			<div class="apropos">
+				<h2>A propos</h2>
+			</div>
+			<div class="contact">
+				<h2>Contact</h2>
+				<form>
+					<label for="Nom">Nom : </label>
+					<input type="text" name="Nom" id="Nom" required><br>
+
+					<label for="Prenom">Prénom : </label>
+					<input type="text" name="Prenom" id="Prenom" required><br>
+
+					<label for="Email">Email : </label>
+					<input type="Email" name="Email" id="Email" required><br>
+
+					<label for="Question">Question :</label>
+					<textarea name="Question" id="Question" rows="1" cols="15"></textarea><br>
+					<input class="submit" type="submit">
+				</form>
+			</div>
+		</div>
 
 		<a href="../index.html"><button class="Menu">Menu</button></a>
 	</main>
