@@ -217,4 +217,15 @@ footer {
         display: block; /* Affichage en bloc pour éviter le chevauchement */
         margin: 5px; /* Ajout d'espace vertical entre les textes */
     }
+
+    h5 {
+			font: 40pt 'Minecraftia';
+    	color: yellow;
+    	text-shadow: 2px 2px #4C4C4C;
+    	position: absolute; /* Positionnement absolu par rapport à l'élément parent */
+    	bottom: 500px; /* Espacement du bas de l'image */
+    	right: 10px; /* Espacement du bord droit de l'image */
+    	animation: zoom 2s infinite;
+    	pointer-events: none; /* Empêche l'interaction avec le texte */
+}
 }

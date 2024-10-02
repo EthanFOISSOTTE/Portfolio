@@ -60,167 +60,23 @@ h2 {
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.minecraft-btn3 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 24%;
-  	top: 40%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn3:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn4 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 24%;
-  	top: 47%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn4:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn5 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 24%;
-  	top: 54%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn5:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn6 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 24%;
-  	top: 61%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn6:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn7 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50.5%;
-  	top: 40%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn7:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn8 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50.5%;
-  	top: 47%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn8:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
-.minecraft-btn9 {
-	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 50.5%;
-  	top: 54%;
-  	transform: tranlate(-50%);
-  	width: 25%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
-}
-
-.minecraft-btn9:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
-}
-
 .Menu {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
-  	border-color: #AAA #565656 #565656 #AAA;
-  	text-shadow: 3px 3px #4C4C4C;
-  	outline: 2px solid #000;
-  	position: absolute;
-  	left: 65%;
-  	top: 90%;
-  	transform: tranlate(-50%);
-  	width: 12%;
-  	height: 5%;
-  	color: white;
-  	font: 1.2vw 'Minecraftia'; 
+  border-color: #AAA #565656 #565656 #AAA;
+  text-shadow: 3px 3px #4C4C4C;
+  outline: 2px solid #000;
+  color: white;
+  width: 20%; /* L'image occupe 80% de la largeur de l'écran */
+  height: 5%; /* Hauteur auto pour garder le ratio de l'image */
+  position: relative; /* Changement de positionnement pour éviter le chevauchement */
+  left: 0;
+  transform: none; /* On retire la transformation pour un centrage naturel */
+  display: block;
+  margin-top: 85vh;
+  margin-left: auto;
+  margin-right: auto; /* Centre l'image horizontalement */
+  font: 1.5vw 'Minecraftia'; 
 }
 
 .Menu:hover {
