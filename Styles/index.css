@@ -42,7 +42,7 @@ body {
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.Options, .Quitter {
+#Options, #Quitter {
     background-image: url(../Images/BtnGrey.png);
     font-family: 'MinecraftiaRegular';
     border-color: #AAA #565656 #565656 #AAA;
@@ -57,11 +57,11 @@ body {
     margin-top: 1%; /* Espacement vertical sous le bouton 3 */
     margin-left: 10px; /* Espace entre les boutons */
 }
-.Options {
+#Options {
 	margin-left: 35%;
 }
 
-.Options:hover, .Quitter:hover {
+.Options:hover, #Quitter:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
@@ -178,7 +178,7 @@ footer {
     }
 
     /* Réorganisation des boutons en colonne avec même largeur que l'image */
-    #minecraft-btn1, #minecraft-btn2, #minecraft-btn3, .Quitter, .Options {
+    #minecraft-btn1, #minecraft-btn2, #minecraft-btn3, #Quitter, #Options {
         width: 80%; /* Même largeur que l'image */
         height: auto; /* Hauteur adaptée au contenu */
         font-size: 5vw; /* Taille de texte plus grande sur mobile */

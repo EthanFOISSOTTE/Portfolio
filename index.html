@@ -6,8 +6,8 @@
 	<link rel="stylesheet" type="text/css" href="Styles/index.css">
 	<title>MineFolio</title>
 </head>
-
 <body>
+
 <!-- En-tête -->
 <header>
 	<img class="Name" src="Images/MINEFOLIO.png">
@@ -15,32 +15,55 @@
 </header>
 
 <!-- Boutons avec sons -->
-<button id="minecraft-btn1" onclick="audio.play(); setTimeout(() => { location.href='Pages/singleplayer.html'; }, 100);">Compétences</button>
-<button id="minecraft-btn2" onclick="audio.play(); setTimeout(() => { location.href='Pages/multiplayer.html'; }, 100);">Expériences</button>
-<button id="minecraft-btn3" onclick="audio.play(); setTimeout(() => { location.href='Pages/advancementplayer.html'; }, 100);">Formations</button>
-<button class="Options" onclick="audio.play(); setTimeout(() => {location.href='Pages/options.html'; }, 100);">Personnel</button>
-<button class="Quitter" id="quit-btn" onclick="audio.play()">Quitter</button>
+<button id="minecraft-btn1" onclick="playClickSound(); setTimeout(() => { location.href='Pages/singleplayer.html'; }, 100);">Compétences</button>
+<button id="minecraft-btn2" onclick="playClickSound(); setTimeout(() => { location.href='Pages/multiplayer.html'; }, 100);">Expériences</button>
+<button id="minecraft-btn3" onclick="playClickSound(); setTimeout(() => { location.href='Pages/advancementplayer.html'; }, 100);">Formations</button>
+<button id="Options" onclick="playClickSound(); setTimeout(() => { location.href='Pages/options.html'; }, 100);">Personnel</button>
+<button id="Quitter" id="quit-btn">Quitter</button>
+
+<!-- Bouton pour démarrer le son d'ambiance -->
+<button id="start-sound" onclick="startSound()">Démarrer le son</button>
+
+<!-- Iframe cachée pour le son d'ambiance -->
+<iframe id="sound-frame" src="sound.html" style="display: none;"></iframe>
 
 <footer>
 	<p class="Version">MineFolio v.1.1</p>
 	<p class="Copyright">Copyright FOISSOTTE E. Do not distribute!</p>
 </footer>
 
-<script type="text/javascript">
-	// Permet de fermer la fenêtre quand on appuie sur le bouton "Quitter".
-	document.getElementById('quit-btn').addEventListener('click', function () {
-		const userConfirmed = window.confirm('Voulez-vous vraiment quitter la page ? Vous serez redirigé vers Google.');
-		if (userConfirmed) {
-			window.close();
-			if (!window.closed) {
-				window.location.href = 'https://www.google.com';
-			}
-		}
-	});
+<script>
+	// Fonction pour jouer le son de clic
+	const clickSound = new Audio("Son/minecraft_click.mp3");
 
-	// Lecture du son lors d'un clic sur un bouton
-	var audio = new Audio();
-	audio.src = "Son/minecraft_click.mp3";
+	function playClickSound() {
+		clickSound.currentTime = 0;
+		clickSound.play();
+	}
+
+	// Fonction pour démarrer le son d'ambiance
+	function startSound() {
+		// Accéder à l'iframe
+		const iframe = document.getElementById('sound-frame');
+
+		// Vérifier si l'iframe et l'élément audio sont chargés
+		if (iframe && iframe.contentWindow) {
+			const sound = iframe.contentWindow.document.getElementById('background-sound');
+
+			// S'assurer que l'élément audio existe avant d'essayer de manipuler ses propriétés
+			if (sound) {
+				sound.volume = 0.5; // Ajustez le volume comme souhaité
+				sound.play().catch((e) => {
+					console.warn("Le son d'ambiance a été bloqué.");
+				});
+			} else {
+				console.error('Le son n\'est pas trouvé dans l\'iframe.');
+			}
+		} else {
+			console.error('Iframe ou contenu de l\'iframe non disponible.');
+		}
+	}
 </script>
+
 </body>
 </html>
