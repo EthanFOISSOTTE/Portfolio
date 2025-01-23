@@ -18,26 +18,26 @@ body {
 	overflow: hidden;
 }
 
-.minecraft-btn1, .minecraft-btn2, .minecraft-btn3 {
+#minecraft-btn1, #minecraft-btn2, #minecraft-btn3 {
 	background-image: url(../Images/BtnGrey.png);
-	font-family: 'MinecraftiaRegular';
-  border-color: #AAA #565656 #565656 #AAA;
-  text-shadow: 3px 3px #4C4C4C;
-  outline: 2px solid #000;
-  color: white;
-  width: 30%; /* L'image occupe 80% de la largeur de l'écran */
-  height: 5%; /* Hauteur auto pour garder le ratio de l'image */
-  position: relative; /* Changement de positionnement pour éviter le chevauchement */
-  left: 0;
-  transform: none; /* On retire la transformation pour un centrage naturel */
-  display: block;
-  margin-top: 1%;
-  margin-left: auto;
-  margin-right: auto; /* Centre l'image horizontalement */
-  font: 1.2vw 'Minecraftia'; 
+    font-family: 'MinecraftiaRegular';
+    border-color: #AAA #565656 #565656 #AAA;
+    text-shadow: 3px 3px #4C4C4C;
+    outline: 2px solid #000;
+    color: white;
+    width: 30%; /* L'image occupe 80% de la largeur de l'écran */
+    height: 5%; /* Hauteur auto pour garder le ratio de l'image */
+    position: relative; /* Changement de positionnement pour éviter le chevauchement */
+    left: 0;
+    transform: none; /* On retire la transformation pour un centrage naturel */
+    display: block;
+    margin-top: 1%;
+    margin-left: auto;
+    margin-right: auto; /* Centre l'image horizontalement */
+    font: 1.2vw 'Minecraftia';
 }
 
-.minecraft-btn1:hover, .minecraft-btn2:hover, .minecraft-btn3:hover {
+#minecraft-btn1:hover, #minecraft-btn2:hover, #minecraft-btn3:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
@@ -178,7 +178,7 @@ footer {
     }
 
     /* Réorganisation des boutons en colonne avec même largeur que l'image */
-    .minecraft-btn1, .minecraft-btn2, .minecraft-btn3, .Quitter, .Options {
+    #minecraft-btn1, #minecraft-btn2, #minecraft-btn3, .Quitter, .Options {
         width: 80%; /* Même largeur que l'image */
         height: auto; /* Hauteur adaptée au contenu */
         font-size: 5vw; /* Taille de texte plus grande sur mobile */
