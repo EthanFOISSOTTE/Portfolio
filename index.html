@@ -15,20 +15,22 @@
 </header>
 
 <!-- Boutons avec sons -->
-<button id="minecraft-btn1" onclick="playClickSound(); setTimeout(() => { location.href='Pages/singleplayer.html'; }, 100);">Compétences</button>
+<button id="minecraft-btn1" onclick="playClickSound(); setTimeout(() => { location.href='Pages/Competences.html'; }, 100);">Compétences</button>
 <button id="minecraft-btn2" onclick="playClickSound(); setTimeout(() => { location.href='Pages/multiplayer.html'; }, 100);">Expériences</button>
 <button id="minecraft-btn3" onclick="playClickSound(); setTimeout(() => { location.href='Pages/advancementplayer.html'; }, 100);">Formations</button>
-<button id="Options" onclick="playClickSound(); setTimeout(() => { location.href='Pages/options.html'; }, 100);">Personnel</button>
-<button id="Quitter" id="quit-btn">Quitter</button>
+<div class="btn-container">
+	<button id="Options" onclick="playClickSound(); setTimeout(() => { location.href='Pages/options.html'; }, 100);">Personnel</button>
+	<button id="Quitter" id="quit-btn">Quitter</button>
+</div>
 
-<!-- Bouton pour démarrer le son d'ambiance -->
-<button id="start-sound" onclick="startSound()">Démarrer le son</button>
+<!-- Bouton pour démarrer le son d'ambiance || Non fonctionnel à 100% -->
+<!--<button id="start-sound" onclick="startSound()">Démarrer le son</button>-->
 
-<!-- Iframe cachée pour le son d'ambiance -->
-<iframe id="sound-frame" src="sound.html" style="display: none;"></iframe>
+<!-- Iframe cachée pour le son d'ambiance || Non fonctionnel à 100%-->
+<!--<iframe id="sound-frame" src="sound.html" style="display: none;"></iframe>-->
 
 <footer>
-	<p class="Version">MineFolio v.1.1</p>
+	<p class="Version">MineFolio v.2.0</p>
 	<p class="Copyright">Copyright FOISSOTTE E. Do not distribute!</p>
 </footer>
 
