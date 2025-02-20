@@ -42,28 +42,32 @@ body {
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
+.btn-container {
+    display: flex; /* Aligne les boutons horizontalement */
+    justify-content: center; /* Centre les boutons */
+    gap: 1%; /* Espace entre les boutons */
+    margin-top: 1%;
+    height: 5%;
+}
+
 #Options, #Quitter {
+    width: 14.5%; /* Même largeur que les boutons 1, 2 et 3 */
     background-image: url(../Images/BtnGrey.png);
     font-family: 'MinecraftiaRegular';
     border-color: #AAA #565656 #565656 #AAA;
     text-shadow: 3px 3px #4C4C4C;
     outline: 2px solid #000;
     color: white;
-    font: 1.2vw 'Minecraftia'; 
-    width: 14.4%; /* Largeur des boutons */
-    height: 5%; /* Hauteur fixe */
-    display: inline-block; /* Affichage côte à côte */
-    position: relative; /* Positionnement normal */
-    margin-top: 1%; /* Espacement vertical sous le bouton 3 */
-    margin-left: 10px; /* Espace entre les boutons */
-}
-#Options {
-	margin-left: 35%;
+    font: 1.2vw 'Minecraftia';
+    display: flex; /* Permet un meilleur centrage du texte */
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
 
-.Options:hover, #Quitter:hover {
-	background-image: url(../Images/BtnBlue.png);
-  	border-color: #BDC6FF #59639A #59639A #BDC6FF;
+#Options:hover, #Quitter:hover {
+    background-image: url(../Images/BtnBlue.png);
+    border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
 .Langues {
