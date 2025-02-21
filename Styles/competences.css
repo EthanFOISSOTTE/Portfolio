@@ -74,7 +74,7 @@ main {
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.minecraft-btn2 {
+.tri_connaissance {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
@@ -90,7 +90,7 @@ main {
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.minecraft-btn2:hover {
+.tri_connaissance:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
@@ -182,12 +182,14 @@ main {
 .skill {
 	display: flex;
 	flex-direction: column;
+	flex-wrap: wrap; /* Permet aux éléments de bien s'organiser même quand certains sont cachés */
 	margin-left: 25vw;
 	margin-right: 25vw;
 	height: 62vh;
 	overflow-x: hidden;
-    overflow-y: scroll;
+	overflow-y: scroll;
 }
+
 
 .skill div div {
 	width: auto;
