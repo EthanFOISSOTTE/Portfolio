@@ -53,7 +53,7 @@ main {
 	background-color: rgba(0, 0, 0, 0.5);
 }
 
-.minecraft-btn1 {
+.btn-deroulant {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
@@ -69,7 +69,7 @@ main {
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.minecraft-btn1:hover {
+.btn-deroulant:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
@@ -95,7 +95,7 @@ main {
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.minecraft-btn3 {
+.btn-craftle {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
@@ -111,12 +111,12 @@ main {
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.minecraft-btn3:hover {
+.btn-craftle:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.minecraft-btn4 {
+.btn-avec-projet {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
@@ -132,12 +132,12 @@ main {
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.minecraft-btn4:hover {
+.btn-avec-projet:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
 
-.minecraft-btn5 {
+.btn-sans-projet {
 	background-image: url(../Images/BtnGrey.png);
 	font-family: 'MinecraftiaRegular';
   	border-color: #AAA #565656 #565656 #AAA;
@@ -153,7 +153,7 @@ main {
   	font: 1.2vw 'Minecraftia'; 
 }
 
-.minecraft-btn5:hover {
+.btn-sans-projet:hover {
 	background-image: url(../Images/BtnBlue.png);
   	border-color: #BDC6FF #59639A #59639A #BDC6FF;
 }
@@ -207,262 +207,264 @@ main {
 	white-space: normal;
 }
 
-.categorie_programmation {
-	background-image: url(../Images/Grass_Texture.jpg);
-	background-size: 20%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+.skill {
+	.categorie_programmation {
+		background-image: url(../Images/Grass_Texture.jpg);
+		background-size: 20%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.programmation {
-	background-image: url(../Images/Dirt_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.programmation {
+		background-image: url(../Images/Dirt_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.programmation .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.programmation .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.programmation .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.programmation .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_frontend {
-	background-image: url(../Images/Stone_Texture.jpg);
-	background-size: 20%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_frontend {
+		background-image: url(../Images/Stone_Texture.jpg);
+		background-size: 20%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.frontend {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.frontend {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.frontend .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.frontend .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.frontend .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.frontend .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_backend {
-	background-image: url(../Images/Charbon_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_backend {
+		background-image: url(../Images/Charbon_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.backend {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.backend {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.backend .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.backend .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.backend .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.backend .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_dev_mobile {
-	background-image: url(../Images/Iron_Ore_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_dev_mobile {
+		background-image: url(../Images/Iron_Ore_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.dev_mobile {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.dev_mobile {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.dev_mobile .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.dev_mobile .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.dev_mobile .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.dev_mobile .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_ia {
-	background-image: url(../Images/Redstone_Ore_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_ia {
+		background-image: url(../Images/Redstone_Ore_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.ia {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.ia {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.ia .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.ia .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.ia .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.ia .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_database {
-	background-image: url(../Images/Lapis_Ore_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_database {
+		background-image: url(../Images/Lapis_Ore_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.database {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.database {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.database .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.database .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.database .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.database .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_devops {
-	background-image: url(../Images/Gold_Ore_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_devops {
+		background-image: url(../Images/Gold_Ore_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.devops {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.devops {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.devops .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.devops .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.devops .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.devops .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_game_engine {
-	background-image: url(../Images/Emerald_Ore_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_game_engine {
+		background-image: url(../Images/Emerald_Ore_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.game_engine {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.game_engine {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.game_engine .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.game_engine .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.game_engine .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.game_engine .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.categorie_autre {
-	background-image: url(../Images/Diamond_Ore_Texture.jpg);
-	background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	align-items: center;
-	justify-content: center;
-	font: 1vw 'Minecraftia';
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
-}
+	.categorie_autre {
+		background-image: url(../Images/Diamond_Ore_Texture.jpg);
+		background-size: 12%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		align-items: center;
+		justify-content: center;
+		font: 1vw 'Minecraftia';
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 
-.autre {
-	background-image: url(../Images/Andesite_Texture.jpg);
-	background-color: rgba(0, 0, 0, 0.4);
-	background-size: 10%;
-	background-blend-mode: multiply;
-}
+	.autre {
+		background-image: url(../Images/Andesite_Texture.jpg);
+		background-color: rgba(0, 0, 0, 0.4);
+		background-size: 10%;
+		background-blend-mode: multiply;
+	}
 
-.autre .niveau {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-	margin-right: 5%;
-}
+	.autre .niveau {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+		margin-right: 5%;
+	}
 
-.autre .projet {
-	align-content: center;
-	font: 10pt 'Minecraftia';
-}
+	.autre .projet {
+		align-content: center;
+		font: 10pt 'Minecraftia';
+	}
 
-.bedrock {
-	background-image: url(../Images/Bedrock_Texture.jpg);
-	background-size: 10%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
-	background-color: rgba(0, 0, 0, 0.4);
-	background-blend-mode: multiply;
+	.bedrock {
+		background-image: url(../Images/Bedrock_Texture.jpg);
+		background-size: 10%; /* Ajuste l'image pour qu'elle remplisse le cadre sans être coupée */
+		background-color: rgba(0, 0, 0, 0.4);
+		background-blend-mode: multiply;
+	}
 }
 
 button:disabled {
