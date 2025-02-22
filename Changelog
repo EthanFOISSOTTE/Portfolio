@@ -1,0 +1,12 @@
+Fichier Changelog à partir du samedi 22-02-2025
+
+# [1.1.0] - 22-02-2025
+## Page compétence
+### Ajouts
+- Ajout d'un bouton avec mode déroulant pour les catégories de compétences.
+- Ajout d'une effet sonore de clic (style minecraft) sur les boutons.
+- Ajout d'un bouton de tri de compétence seulement avec un projet github.
+- Ajout d'un bouton de tri de compétence seulement sans projet github.
+- Ajout d'un bouton de tri de niveau de compétence [Tout, Débutant, Intermédiaire, Avancé].
+- Ajout d'une barre de recherche de compétence (tri selon ce qui est tapé dans la barre).
+- Ajout de liens de redirection entre le projet affiché vers le projet github correspondant.
