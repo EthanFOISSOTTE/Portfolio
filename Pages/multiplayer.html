@@ -16,27 +16,26 @@
 	<main>
 		<div class="skill">
 			<div class="inner">
-				<div class="skill-item" data-page="information_div1.html">
+				<div class="skill-item">
 					<img src="../Images/Logos/Vegafruit.png">
 					<h3>Ouvrier Végafruit</h3>
 					<p>Août 2023, Saint-Nicolas de Port</p>
 				</div>
-				<div class="skill-item" data-page="information_div2.html">
+				<div class="skill-item">
 					<img src="../Images/Logos/Gendarmerie.png">
 					<h3>Stage BTS Gendarmerie</h3>
 					<p>Mai 2023 à Juillet 2023, Nancy</p>
 				</div>
-				<div class="skill-item" data-page="information_div3.html">
+				<div class="skill-item">
 					<img src="../Images/Logos/Gendarmerie.png">
 					<h3>Stage des Cadets Gendarmes</h3>
 					<p>Septembre 2020 à Juin 2021, Nancy</p>
 				</div>
-				<div class="skill-item" data-page="information_div4.html">
+				<div class="skill-item">
 					<img src="../Images/Logos/Polyprod.png">
 					<h3>Mission d'intérim Polyprod</h3>
 					<p>Juin 2020 à Juillet 2020, Dombasle-sur-Meurthe</p>
 				</div>
-				<div></div>
 			</div>
 		</div>
 	</main>
@@ -68,17 +67,6 @@
                 selectedDiv = this;
                 this.classList.add('selected');
             });
-        });
-
-        const infoBtn = document.getElementById('info-btn');
-        infoBtn.addEventListener('click', function() {
-            if (selectedDiv) {
-                const pageToRedirect = selectedDiv.getAttribute('data-page');
-                console.log('Redirection vers:', pageToRedirect);
-                window.location.href = pageToRedirect;
-            } else {
-                alert('Veuillez sélectionner un élément avant de cliquer sur le bouton Info.');
-            }
         });
 </script>
 
