@@ -18,12 +18,20 @@ h2 {
 	text-align: center;
 }
 
+h3{
+	font: 10pt 'Minecraftia';
+}
+
+p {
+	font: 8pt 'Minecraftia';;
+}
+
 main {
 	background-color: black;
 	margin-top: 15px;
 	width: 100vw;
 	height: 62vh;
-	opacity: 0.5;
+	background-color: rgba(0, 0, 0, 0.5);
 }
 
 .minecraft-btn1 {
@@ -191,6 +199,9 @@ main {
 	display: flex;
 	color: white;
 	cursor: pointer;
+	background-image: url(../Images/Dirt_Texture.jpg);
+	background-color: rgba(0, 0, 0, 0.4);
+	background-blend-mode: multiply;
 }
 
 .skill-item img {
