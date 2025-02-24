@@ -10,3 +10,15 @@ Fichier Changelog à partir du samedi 22-02-2025
 - Ajout d'un bouton de tri de niveau de compétence [Tout, Débutant, Intermédiaire, Avancé].
 - Ajout d'une barre de recherche de compétence (tri selon ce qui est tapé dans la barre).
 - Ajout de liens de redirection entre le projet affiché vers le projet github correspondant.
+
+# [1.2.0] - 24-02-2025
+## Page index
+### Ajout
+- Ajout du gif background
+
+## Page Multiplayer
+### Suppression
+- Suppression de la fonction "information" du bouton Information sur l'expérience
+### Ajouts
+- Modification de l'opacité du main (utilisation du rgba)
+- Utilisation de la police d'écriture Minecraft pour les textes "h3" et "p"
