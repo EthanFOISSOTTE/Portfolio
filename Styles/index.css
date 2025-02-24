@@ -9,7 +9,7 @@
 }
 
 body {
-	background-image: url(../Images/Background.jpg);
+    background-image: url("../Images/minecraft-cherry.gif");
 	background-repeat: no-repeat;
 	width: 100vw;
 	height: 100vh;
