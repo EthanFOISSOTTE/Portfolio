@@ -4,6 +4,7 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="Styles/index.css">
+	<script src="https://aframe.io/releases/1.4.2/aframe.min.js"></script>
 	<title>MineFolio</title>
 </head>
 <body>
@@ -13,6 +14,14 @@
 	<img class="Name" src="Images/MINEFOLIO.png">
 	<h5>Recherche Alternance</h5>
 </header>
+
+<a-scene>
+	<a-sky
+			src="https://i.ibb.co/Kz9sjPNg/untitled.png"
+			rotation="0 90 0"
+			animation="property: rotation; to: 0 270 0; loop: true; dur: 60000; easing: linear;">
+	</a-sky>
+</a-scene>
 
 <!-- Boutons avec sons -->
 <button id="minecraft-btn1" onclick="playClickSound(); setTimeout(() => { location.href='Pages/Competences.html'; }, 100);">Compétences</button>
