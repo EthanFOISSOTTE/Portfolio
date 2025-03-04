@@ -15,14 +15,6 @@
 	<h5>Recherche Alternance</h5>
 </header>
 
-<a-scene>
-	<a-sky
-			src="https://i.ibb.co/Kz9sjPNg/untitled.png"
-			rotation="0 90 0"
-			animation="property: rotation; to: 0 270 0; loop: true; dur: 60000; easing: linear;">
-	</a-sky>
-</a-scene>
-
 <!-- Boutons avec sons -->
 <button id="minecraft-btn1" onclick="playClickSound(); setTimeout(() => { location.href='Pages/Competences.html'; }, 100);">Compétences</button>
 <button id="minecraft-btn2" onclick="playClickSound(); setTimeout(() => { location.href='Pages/multiplayer.html'; }, 100);">Expériences</button>
@@ -31,6 +23,14 @@
 	<button id="Options" onclick="playClickSound(); setTimeout(() => { location.href='Pages/options.html'; }, 100);">Personnel</button>
 	<button id="Quitter" id="quit-btn">Quitter</button>
 </div>
+
+<a-scene>
+	<a-sky
+			src="https://i.ibb.co/Kz9sjPNg/untitled.png"
+			rotation="0 90 0"
+			animation="property: rotation; to: 0 270 0; loop: true; dur: 60000; easing: linear;">
+	</a-sky>
+</a-scene>
 
 <!-- Bouton pour démarrer le son d'ambiance || Non fonctionnel à 100% -->
 <!--<button id="start-sound" onclick="startSound()">Démarrer le son</button>-->
