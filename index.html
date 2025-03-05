@@ -24,6 +24,17 @@
 	<button id="Quitter" id="quit-btn">Quitter</button>
 </div>
 
+
+<div id="dialogueBox" class="dialogue-box">
+	Salut, bienvenue sur mon portfolio !
+</div>
+
+<div class="skin-container" id="skinClick">
+	<div class="player-name">FOISSOTTE Ethan</div>
+	<img src="../Images/Skin.png" alt="Skin Minecraft">
+</div>
+
+
 <a-scene>
 	<a-sky
 			src="https://i.ibb.co/Kz9sjPNg/untitled.png"
@@ -39,8 +50,10 @@
 <!--<iframe id="sound-frame" src="sound.html" style="display: none;"></iframe>-->
 
 <footer>
-	<p class="Version">MineFolio v.1.1.0</p>
-	<p class="Copyright">Copyright FOISSOTTE E. Do not distribute!</p>
+	<p class="Version">
+		<a href="https://github.com/EthanFOISSOTTE/Portfolio" target="_blank" class="link-style">MineFolio v.1.5.0</a>
+	</p>
+	<!--<p class="Copyright">Copyright FOISSOTTE E. Do not distribute!</p>-->
 </footer>
 
 <script>
@@ -74,6 +87,22 @@
 			console.error('Iframe ou contenu de l\'iframe non disponible.');
 		}
 	}
+</script>
+
+<script>
+	// Gestion du clic sur l'assistant
+	const dialogueBox = document.getElementById("dialogueBox");
+	const skinClick = document.getElementById("skinClick");
+
+	skinClick.addEventListener("click", () => {
+		dialogueBox.style.display = "block";
+		dialogueBox.style.opacity = "1";
+
+		setTimeout(() => {
+			dialogueBox.style.opacity = "0";
+			setTimeout(() => dialogueBox.style.display = "none", 500);
+		}, 3000);
+	});
 </script>
 
 </body>
